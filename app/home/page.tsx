@@ -1,20 +1,19 @@
 "use client";
-import Spline from "@splinetool/react-spline/next";
 
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  Code,
-  Target,
-  Smartphone,
   Atom,
+  Code,
   Menu,
   MonitorCheck,
+  Smartphone,
+  Target,
 } from "lucide-react";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 
 function FloatingCard({

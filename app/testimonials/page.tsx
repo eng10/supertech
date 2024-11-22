@@ -1,12 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { motion, useAnimation, Variants } from "framer-motion";
+import yes from "@/app/Image/Yes.jpg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { motion, useAnimation, Variants } from "framer-motion";
 import { Star } from 'lucide-react';
 import Image from "next/image";
-import yes from "@/app/Image/Yes.jpg";
+import { useEffect, useRef } from "react";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },

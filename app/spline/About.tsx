@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { BarChart3, MessageSquare, Target, Share2, Puzzle } from "lucide-react";
+import { motion } from "framer-motion";
+import { BarChart3, MessageSquare, Puzzle, Share2, Target } from "lucide-react";
 
 export default function About() {
   const iconData = [

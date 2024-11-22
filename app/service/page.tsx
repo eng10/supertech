@@ -1,18 +1,14 @@
 "use client";
 
-import { ArrowRight } from "lucide-react";
-import { motion } from "framer-motion";
 import {
   Card,
   CardContent,
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import mobile from "@/app/Image/mobile.jpg";
-import soft from "@/app/Image/soft.jpg";
-import Footer from "@/app/footer/page";
-import Navbar from "@/app/navbar/page";
 
 // Array containing the card data
 const serviceCards = [

@@ -1,35 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
-import {
-  ArrowRight,
-  Award,
-  BarChart,
-  CheckCircle,
-  ChevronRight,
-  Globe,
-  Laptop,
-  Mail,
-  MapPin,
-  Palette,
-  Phone,
-  Shield,
-  Smartphone,
-  Users,
-} from "lucide-react";
-import Image from "next/image";
-import { useEffect, useState } from "react";
 import Home from "@/app/home/page";
 
 import About from "@/app/spline/About";
 // import Navbar from "@/app/navbar/page";
-import Service from "@/app/service/page";
+import Contact from "@/app/contact/page";
 import Progress from "@/app/progress/Progress";
 import Projects from "@/app/projects/page";
-import Contact from "@/app/contact/page";
-import Footer from "@/app/footer/page";
+import Service from "@/app/service/page";
 import Testimonials from "@/app/testimonials/page";
-import Header from "@/components/Header";
 
 export default function page() {
   return (
@@ -37,7 +16,7 @@ export default function page() {
       <Home />
       <Service />
       <About />
-      <Progress />
+    <Progress />
       <Testimonials />
       <Projects />
       <Contact />

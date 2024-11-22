@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
-import { Mail, Phone } from "lucide-react";
 import { motion } from "framer-motion";
+import { Mail, Phone } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -12,6 +12,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
 import {
   Select,
   SelectContent,
@@ -19,11 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import Navbar from "@/app/navbar/page";
-import Footer from "@/app/footer/page";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },

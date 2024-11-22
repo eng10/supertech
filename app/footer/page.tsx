@@ -1,7 +1,7 @@
-import Link from "next/link";
-import { Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
-import Image from "next/image";
 import logo from "@/app/Image/iconLogo.png";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function footer() {
   const newDate = new Date();

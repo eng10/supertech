@@ -34,6 +34,7 @@ export default function About() {
       <div className="container mx-auto px-4 py-12 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Left side with large, auto-animating icons */}
+          {/* Left side with large, auto-animating icons */}
           <div className="relative h-[500px]  flex justify-around items-center flex-wrap">
             {iconData.map((icon, index) => (
               <motion.div

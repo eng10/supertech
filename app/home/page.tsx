@@ -1,20 +1,15 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
   Atom,
   Code,
-  Menu,
   MonitorCheck,
   Smartphone,
   Target,
 } from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
 
 function FloatingCard({
   title,
@@ -108,17 +103,6 @@ function AnimatedCircleLine() {
         animate="visible"
       />
     </svg>
-  );
-}
-
-function NavLink({ href, children }: any) {
-  return (
-    <Link
-      href={href}
-      className="text-gray-600 hover:text-primary transition-colors"
-    >
-      {children}
-    </Link>
   );
 }
 

@@ -55,21 +55,21 @@ export default function Testimonials() {
 
   const testimonials = [
     {
-      name: "Mehwish",
+      name: `Mehwish`,
       quote:
-        "Compliment interested discretion estimating on stimulated apartments oh.",
+        `Compliment interested discretion estimating on stimulated apartments oh.`,
       image: yes,
     },
     {
-      name: "Elizabeth Jeff",
+      name: `Elizabeth Jeff`,
       quote:
-        "Dear so sing when in find road of call. As distrusts behaviour abilities defective is.",
+        `Dear so sing when in find road of call. As distrusts behaviour abilities defective is.`,
       image: "https://scontent.fhga1-1.fna.fbcdn.net/v/t39.30808-6/370039350_638259125127184_3346341862225603626_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gt9DTLVpP2gQ7kNvgF0j0dI&_nc_zt=23&_nc_ht=scontent.fhga1-1.fna&_nc_gid=AdVVsZq1MjZB0Q9CTIFY-py&oh=00_AYB0Dm7uCPNFStal5EjvMyQuFujcL4MNNbnWCz9PmG71Eg&oe=6744E867",
     },
     {
-      name: "Emily Thomas",
+      name: `Emily Thomas`,
       quote:
-        "Never at water me might. On formed merits hunted unable merely by mr whence or.",
+        `Never at water me might. On formed merits hunted unable merely by mr whence or.`,
       image: yes,
     },
   ];

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* @layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+} */
+
+
+.nav-link {
+  position: relative;
+  padding-bottom: 4px; /* Add space for the dot */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px); /* Hide dot initially */
+  width: 4px;
+  height: 4px;
+  background-color: #1d4ed8; /* Blue color for the dot */
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.nav-link {
+  position: relative;
+  padding-bottom: 4px; /* Space for the dot */
+  cursor: pointer; /* Ensures the link looks clickable */
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(6px); /* Initially hidden below */
+  width: 4px;
+  height: 4px;
+  background-color: #1d4ed8; /* Blue dot color */
+  border-radius: 50%;
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) translateY(0); /* Moves dot into view */
+  opacity: 1;
+}
+

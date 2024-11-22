@@ -122,34 +122,6 @@ function NavLink({ href, children }: any) {
   );
 }
 
-function MobileNav() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-      <SheetTrigger asChild>
-        <Button
-          variant="ghost"
-          className="p-0 md:hidden"
-          aria-label="Open menu"
-        >
-          <Menu className="h-6 w-6" />
-          <span className="sr-only">Open menu</span>
-        </Button>
-      </SheetTrigger>
-      <SheetContent side="left" className="w-[300px] sm:w-[400px]">
-        <nav className="flex flex-col gap-4">
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/about">About Us</NavLink>
-          <NavLink href="/services">Our Services</NavLink>
-          <NavLink href="/testimonials">Testimonials</NavLink>
-          <NavLink href="/contact">Contact Us</NavLink>
-        </nav>
-      </SheetContent>
-    </Sheet>
-  );
-}
-
 export default function Component() {
   return (
     <>
@@ -172,11 +144,11 @@ export default function Component() {
                   transition={{ duration: 0.5, delay: 0.1 }}
                   className="text-base md:text-lg text-gray-600 leading-relaxed"
                 >
-                  At SuperTech Solutions, we turn your ideas into reality.
+                  {`At SuperTech Solutions, we turn your ideas into reality.
                   Whether it's crafting a unique brand or building innovative
                   web and mobile apps, we’re here to help grow your business and
                   connect you with the people that matter most. Let’s create
-                  something special together!
+                  something special together!`}
                 </motion.p>
                 <motion.a
                   initial={{ opacity: 0, y: 20 }}

@@ -70,7 +70,7 @@ export default function About() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight"
             >
-              We're Best In Solutions
+              We&apos;re Best In Solutions
             </motion.h1>
 
             <motion.p
@@ -80,7 +80,7 @@ export default function About() {
               className="text-lg text-gray-600"
             >
               Scale your software operations through a custom engineering team.
-              Meet the demand of your company's operations with a
+              Meet the demand of your company&apos;s operations with a
               high-performing sensitive team skilled in the technologies you
               need and solutions.
             </motion.p>
@@ -90,7 +90,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
             >
-            <Button className="bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white px-8 py-6 rounded-full text-lg font-semibold">
+              <Button className="bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700 text-white px-8 py-6 rounded-full text-lg font-semibold">
                 See About Us
               </Button>
             </motion.div>

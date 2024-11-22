@@ -4,7 +4,7 @@ import yes from "@/app/Image/Yes.jpg";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion, useAnimation, Variants } from "framer-motion";
-import { Star } from 'lucide-react';
+import { Star } from "lucide-react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 
@@ -13,9 +13,9 @@ const containerVariants: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.1
-    }
-  }
+      staggerChildren: 0.1,
+    },
+  },
 };
 
 const itemVariants: Variants = {
@@ -25,9 +25,9 @@ const itemVariants: Variants = {
     opacity: 1,
     transition: {
       type: "spring",
-      stiffness: 100
-    }
-  }
+      stiffness: 100,
+    },
+  },
 };
 
 export default function Testimonials() {
@@ -56,20 +56,18 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: `Mehwish`,
-      quote:
-        `Compliment interested discretion estimating on stimulated apartments oh.`,
+      quote: `Compliment interested discretion estimating on stimulated apartments oh.`,
       image: yes,
     },
     {
       name: `Elizabeth Jeff`,
-      quote:
-        `Dear so sing when in find road of call. As distrusts behaviour abilities defective is.`,
-      image: "https://scontent.fhga1-1.fna.fbcdn.net/v/t39.30808-6/370039350_638259125127184_3346341862225603626_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gt9DTLVpP2gQ7kNvgF0j0dI&_nc_zt=23&_nc_ht=scontent.fhga1-1.fna&_nc_gid=AdVVsZq1MjZB0Q9CTIFY-py&oh=00_AYB0Dm7uCPNFStal5EjvMyQuFujcL4MNNbnWCz9PmG71Eg&oe=6744E867",
+      quote: `Dear so sing when in find road of call. As distrusts behaviour abilities defective is.`,
+      image:
+        "https://scontent.fhga1-1.fna.fbcdn.net/v/t39.30808-6/370039350_638259125127184_3346341862225603626_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Gt9DTLVpP2gQ7kNvgF0j0dI&_nc_zt=23&_nc_ht=scontent.fhga1-1.fna&_nc_gid=AdVVsZq1MjZB0Q9CTIFY-py&oh=00_AYB0Dm7uCPNFStal5EjvMyQuFujcL4MNNbnWCz9PmG71Eg&oe=6744E867",
     },
     {
       name: `Emily Thomas`,
-      quote:
-        `Never at water me might. On formed merits hunted unable merely by mr whence or.`,
+      quote: `Never at water me might. On formed merits hunted unable merely by mr whence or.`,
       image: yes,
     },
   ];
@@ -125,9 +123,9 @@ export default function Testimonials() {
             className="text-muted-foreground max-w-[600px] mx-auto lg:mx-0"
             variants={itemVariants}
           >
-            Relation so in confined smallest children unpacked delicate. Why
-            sir end believe uncivil respect. Always get adieus nature day
-            course for common.
+            Relation so in confined smallest children unpacked delicate. Why sir
+            end believe uncivil respect. Always get adieus nature day course for
+            common.
           </motion.p>
           <motion.div
             className="flex justify-center lg:justify-start"
@@ -160,7 +158,11 @@ export default function Testimonials() {
                   <motion.div
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
-                    transition={{ delay: 0.2 * index, type: "spring", stiffness: 200 }}
+                    transition={{
+                      delay: 0.2 * index,
+                      type: "spring",
+                      stiffness: 200,
+                    }}
                   >
                     <Image
                       src={testimonial.image}
@@ -195,21 +197,16 @@ export default function Testimonials() {
                     className={`${
                       index === 1 ? "text-blue-600" : "text-gray-200"
                     } absolute top-0 left-0 text-[120px] leading-[100px] opacity-50 font-serif`}
-                    initial={{ opacity: 0, x: -50 }}
-                    animate={{ opacity: 0.5, x: 0 }}
-                    transition={{ delay: 0.4 * index, duration: 0.5 }}
                   >
-                    "
+                    &quot;
                   </motion.span>
+
                   <motion.span
                     className={`${
                       index === 1 ? "text-blue-600" : "text-gray-200"
                     } absolute bottom-0 right-0 text-[120px] leading-[100px] opacity-50 font-serif rotate-180`}
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 0.5, x: 0 }}
-                    transition={{ delay: 0.4 * index, duration: 0.5 }}
                   >
-                    "
+                    &quot;
                   </motion.span>
                 </CardContent>
               </Card>
@@ -220,4 +217,3 @@ export default function Testimonials() {
     </section>
   );
 }
-

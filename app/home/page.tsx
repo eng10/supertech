@@ -28,7 +28,7 @@ function FloatingCard({
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay, duration: 0.5 }}
       className={cn(
-        "absolute bg-white rounded-xl p-4 shadow-lg flex items-center gap-3",
+        "bg-white rounded-xl p-4 shadow-lg flex items-center gap-3",
         "hover:shadow-xl transition-shadow duration-300",
         className
       )}
@@ -53,7 +53,7 @@ function FloatingIcons() {
           repeat: Infinity,
           repeatType: "reverse",
         }}
-        className="absolute top-12 right-24"
+        className="absolute top-4 right-4 md:top-8 md:right-16"
       >
         <Code className="w-6 h-6 text-blue-500 opacity-60" />
       </motion.div>
@@ -67,7 +67,7 @@ function FloatingIcons() {
           repeatType: "reverse",
           delay: 1,
         }}
-        className="absolute bottom-24 right-12"
+        className="absolute bottom-4 right-4 md:bottom-16 md:right-8"
       >
         <Atom className="w-6 h-6 text-blue-500 opacity-60" />
       </motion.div>
@@ -109,8 +109,8 @@ function AnimatedCircleLine() {
 export default function Component() {
   return (
     <>
-      <div className=" bg-[#E8E9F5] flex flex-col">
-        <main className="flex-grow  container mx-auto px-4 py-8 md:py-16">
+      <div className="bg-[#E8E9F5] flex flex-col">
+        <main className="flex-grow container mx-auto px-4 py-8 md:py-16">
           <div className="bg-[#E8E9F5] rounded-3xl p-6 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="space-y-6">
@@ -130,8 +130,8 @@ export default function Component() {
                 >
                   {`At SuperTech Solutions, we turn your ideas into reality.
                   Whether it's crafting a unique brand or building innovative
-                  web and mobile apps, we’re here to help grow your business and
-                  connect you with the people that matter most. Let’s create
+                  web and mobile apps, we're here to help grow your business and
+                  connect you with the people that matter most. Let's create
                   something special together!`}
                 </motion.p>
                 <motion.a
@@ -139,72 +139,70 @@ export default function Component() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                   href="/projects"
-                  className="inline-flex items-center bg-blue-500  text-white py-3 px-3  rounded-[6px] font-medium hover:bg-blue-400 transition-colors"
+                  className="inline-flex items-center bg-blue-500 text-white py-3 px-3 rounded-[6px] font-medium hover:bg-blue-400 transition-colors"
                 >
                   Read More
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </motion.a>
               </div>
 
-              <div className="relative h-[300px] md:h-[400px] mt-8 md:mt-0">
+              <div className="relative h-[400px] mt-8 md:mt-0">
                 <AnimatedCircleLine />
                 <FloatingIcons />
 
-                <motion.div
-                  animate={{
-                    y: [0, -10, 0],
-                  }}
-                  transition={{
-                    duration: 5,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                  }}
-                >
-                  <FloatingCard
-                    title="Branding"
-                    icon={Target}
-                    className="top-0 left-1/2 -translate-x-1/2"
-                    delay={0.3}
-                  />
-                </motion.div>
+                <div className="absolute inset-0 flex flex-col md:block justify-center items-center gap-4 md:gap-0">
+                  <motion.div
+                    animate={{
+                      y: [0, -10, 0],
+                    }}
+                    transition={{
+                      duration: 5,
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                    }}
+                    className="md:absolute md:top-4 md:left-1/4 md:-translate-x-1/2"
+                  >
+                    <FloatingCard title="Branding" icon={Target} delay={0.3} />
+                  </motion.div>
 
-                <motion.div
-                  animate={{
-                    y: [0, 10, 0],
-                  }}
-                  transition={{
-                    duration: 4,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                    delay: 1,
-                  }}
-                >
-                  <FloatingCard
-                    title="web Applications"
-                    icon={MonitorCheck}
-                    className="top-32 right-0"
-                    delay={0.4}
-                  />
-                </motion.div>
+                  <motion.div
+                    animate={{
+                      y: [0, 10, 0],
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      delay: 1,
+                    }}
+                    className="md:absolute md:top-1/2 md:right-4"
+                  >
+                    <FloatingCard
+                      title="Web Applications"
+                      icon={MonitorCheck}
+                      delay={0.4}
+                    />
+                  </motion.div>
 
-                <motion.div
-                  animate={{
-                    y: [0, -8, 0],
-                  }}
-                  transition={{
-                    duration: 4.5,
-                    repeat: Infinity,
-                    repeatType: "reverse",
-                    delay: 0.5,
-                  }}
-                >
-                  <FloatingCard
-                    title="Mobile Applications"
-                    icon={Smartphone}
-                    className="top-28 left-12"
-                    delay={0.5}
-                  />
-                </motion.div>
+                  <motion.div
+                    animate={{
+                      y: [0, -8, 0],
+                    }}
+                    transition={{
+                      duration: 4.5,
+                      repeat: Infinity,
+                      repeatType: "reverse",
+                      delay: 0.5,
+                    }}
+                    className="md:absolute md:bottom-8 md:left-8"
+                  >
+                    <FloatingCard
+                      title="Mobile Applications"
+                      icon={Smartphone}
+                      delay={0.5}
+                    />
+                  </motion.div>
+                </div>
               </div>
             </div>
           </div>

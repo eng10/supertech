@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Updated link to reference the PNG file */}
         <link rel="icon" href="/icon.png" type="image/png" />
         <meta
           name="google-site-verification"

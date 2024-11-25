@@ -30,6 +30,10 @@ export default function RootLayout({
       <head>
         {/* Updated link to reference the PNG file */}
         <link rel="icon" href="/icon.png" type="image/png" />
+        <meta
+          name="google-site-verification"
+          content="-VRoTPrtxb9yGG-q_4AQ3_Jww4zAYRH7162wLhjMRcI"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

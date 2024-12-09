@@ -1,5 +1,6 @@
 "use client";
 
+import Head from "next/head"; // Import Head for SEO
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import {
@@ -109,6 +110,35 @@ function AnimatedCircleLine() {
 export default function Component() {
   return (
     <>
+      {/* SEO Tags */}
+      <Head>
+        <title>Empowering Your Vision | SuperTech Solutions</title>
+        <meta
+          name="description"
+          content="At SuperTech Solutions, we craft unique brands, build innovative web and mobile apps, and help businesses grow. Let's create something special together!"
+        />
+        <meta
+          name="keywords"
+          content="branding, web applications, mobile applications, innovative solutions, SuperTech Solutions"
+        />
+        <meta name="author" content="SuperTech Solutions" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          property="og:title"
+          content="Empowering Your Vision | SuperTech Solutions"
+        />
+        <meta
+          property="og:description"
+          content="At SuperTech Solutions, we craft unique brands, build innovative web and mobile apps, and help businesses grow."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://yoursite.com" />
+        <meta
+          property="og:image"
+          content="https://yoursite.com/your-og-image.jpg"
+        />
+      </Head>
+
       <div className="bg-[#E8E9F5] flex flex-col">
         <main className="flex-grow container mx-auto px-4 py-8 md:py-16">
           <div className="bg-[#E8E9F5] rounded-3xl p-6 md:p-12">

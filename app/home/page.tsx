@@ -132,10 +132,10 @@ export default function Component() {
           content="At SuperTech Solutions, we craft unique brands, build innovative web and mobile apps, and help businesses grow."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yoursite.com" />
+        <meta property="og:url" content="https://www.supertechss.com/" />
         <meta
           property="og:image"
-          content="https://yoursite.com/your-og-image.jpg"
+          content="https://www.supertechss.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FiconLogo.a2afb7fa.png&w=96&q=75"
         />
       </Head>
 

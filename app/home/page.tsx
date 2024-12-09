@@ -1,3 +1,5 @@
+"use client";
+
 import Head from "next/head"; // Import Head for SEO
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -110,7 +112,7 @@ export default function Component() {
     <>
       {/* SEO Tags */}
       <Head>
-        <title>Empowering Your Vision | SuperTech Solutions</title>
+      <title>Innovative SEO Solutions | SuperTech Solutions</title>
         <meta
           name="description"
           content="At SuperTech Solutions, we craft unique brands, build innovative web and mobile apps, and help businesses grow. Let's create something special together!"
@@ -134,25 +136,6 @@ export default function Component() {
         <meta
           property="og:image"
           content="https://www.supertechss.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FiconLogo.a2afb7fa.png&w=96&q=75"
-        />
-        {/* Add Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              name: "SuperTech Solutions",
-              url: "https://www.supertechss.com",
-              logo: "https://www.supertechss.com/logo.png",
-              description:
-                "Innovative SEO and branding solutions with cutting-edge web and mobile apps.",
-              sameAs: [
-                "https://www.linkedin.com/company/supertechsolutions",
-                "https://twitter.com/supertechsolutions",
-              ],
-            }),
-          }}
         />
       </Head>
 
